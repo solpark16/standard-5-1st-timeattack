@@ -20,7 +20,13 @@ export default function TodoForm({ setTodos }) {
     setContent("");
   };
   return (
-    <form onSubmit={addTodoHandler}>
+    <form
+      onSubmit={addTodoHandler}
+      style={{
+        display: "flex",
+        gap: "10px",
+      }}
+    >
       <input
         placeholder="제목을 입력하세요."
         value={title}

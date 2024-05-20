@@ -21,6 +21,7 @@ export default function TodoList({ todos, setTodos, isDone }) {
         style={{
           display: "flex",
           gap: "10px",
+          padding: "0",
         }}
       >
         {todos

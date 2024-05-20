@@ -18,11 +18,17 @@ export default function App() {
     },
   ]);
   return (
-    <>
+    <div
+      style={{
+        maxWidth: "1200px",
+        minWidth: "800px",
+        margin: "0 auto",
+      }}
+    >
       <h1>투두리스트 타임어택</h1>
       <TodoForm setTodos={setTodos}></TodoForm>
       <TodoList setTodos={setTodos} isDone={false} todos={todos}></TodoList>
       <TodoList setTodos={setTodos} isDone={true} todos={todos}></TodoList>
-    </>
+    </div>
   );
 }

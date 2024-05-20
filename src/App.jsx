@@ -1,6 +1,6 @@
 import { useState } from "react";
 export default function App() {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState("");
   const [count, setCount] = useState(0);
   return (
     <div>

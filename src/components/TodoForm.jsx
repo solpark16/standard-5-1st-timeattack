@@ -20,7 +20,7 @@ export default function TodoForm({ setTodos }) {
     setContent("");
   };
   return (
-    <form>
+    <form onSubmit={addTodoHandler}>
       <input
         placeholder="제목을 입력하세요."
         value={title}
@@ -35,7 +35,7 @@ export default function TodoForm({ setTodos }) {
           setContent(e.target.value);
         }}
       />
-      <button onClick={addTodoHandler}>추가하기</button>
+      <button>추가하기</button>
     </form>
   );
 }

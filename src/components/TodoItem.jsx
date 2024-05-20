@@ -6,8 +6,13 @@ export default function TodoItem({
 }) {
   const { id, title, content } = todo;
   return (
-    <li>
-      <p>{title}</p>
+    <li
+      style={{
+        border: "1px solid black",
+        padding: "10px",
+      }}
+    >
+      <h3>{title}</h3>
       <p>{content}</p>
       <button onClick={() => deleteTodoHandler(id)}>삭제</button>
       <button onClick={() => toggleTodoHandler(id)}>
